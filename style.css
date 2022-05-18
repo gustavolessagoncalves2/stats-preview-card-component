@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
-/*font-family: 'Overpass', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/*font-family: 'Inter', sans-serif;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 /*font-family: 'Lexend Deca', sans-serif;*/
@@ -11,35 +11,66 @@
 
 body {
     background-color: hsl(233, 47%, 7%);
+    min-height: 100 vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     background-color: hsl(244, 38%, 16%);
-    max-width: 375px;
+    width: 345px;
+
+    border-radius: 10px;
+
+    text-align: center; /*pensar flexibilidade*/
+}
+
+img {
+    width: 100px; /*remover*/
 }
 
 h1 {
     color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 30px 20px 10px 20px;
+}
+
+strong {
+    color: hsl(277, 64%, 61%);
 }
 
 h2 {
     color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    padding: 15px 40px 30px 40px;
 }
 
 .stat {
     color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 0px 5px 0px;
 }
 
 .stat-heading {
     color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    padding-bottom: 30px;
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    padding: 10px;
     width: 100%;
-
+    padding: 10px 0px;
     background-color: aqua; /*remover*/
 }
 
