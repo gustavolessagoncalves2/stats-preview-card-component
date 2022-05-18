@@ -11,7 +11,7 @@
 
 body {
     background-color: hsl(233, 47%, 7%);
-    min-height: 100 vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,8 +27,10 @@ main {
     text-align: center; /*pensar flexibilidade*/
 }
 
-img {
-    width: 100px; /*remover*/
+.main-img {
+    width: 100%; /*remover*/
+    border-radius: 10px 10px 0px 0px;
+    filter: hue-rotate(250deg);
 }
 
 h1 {
@@ -71,7 +73,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 10px 0px;
-    background-color: aqua; /*remover*/
+    background-color: rgb(112, 93, 129); /*remover*/
 }
 
 .attribution {
