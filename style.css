@@ -20,24 +20,47 @@ body {
 
 main {
     background-color: hsl(244, 38%, 16%);
-    width: 345px;
-    margin: 75px 0px;
+    
+    display: flex;
+
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: stretch;
+
+    max-width: 1080px; /*aumentar pra 1290px*/
+    min-width: 345px;
+    
+
+    /*width: 345px;*/
+    margin: 75px 25px;
+
     border-radius: 10px;
 
-    text-align: center; /*pensar flexibilidade com uso do wrap no Flexbox*/
+    text-align: center;
 }
 
 .main-img {
-    width: 100%; /*remover*/
-    border-radius: 10px 10px 0px 0px;
-    filter: hue-rotate(250deg);
+    max-height: 446px;
+    /*width: 100%;*/
+    /*border-radius: 10px 10px 0px 0px;*/
+    filter: hue-rotate(250deg); /*rever filtro de cor*/
+}
+
+.main-content {
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 480px;
+    padding: 30px;
 }
 
 h1 {
     color: hsl(0, 0%, 100%);
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    padding: 30px 20px 10px 20px;
 }
 
 strong {
@@ -50,7 +73,13 @@ h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 1.8;
-    padding: 15px 40px 30px 40px;
+}
+
+.data {
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .stat {
@@ -58,7 +87,6 @@ h2 {
     font-family: 'Inter', sans-serif;
     font-size: 25px;
     font-weight: 700;
-    padding: 10px 0px 5px 0px;
 }
 
 .stat-heading {
