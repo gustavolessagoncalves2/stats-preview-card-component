@@ -14,17 +14,18 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 main {
     background-color: hsl(244, 38%, 16%);
     width: 345px;
+    margin: 100px 0px;
 
     border-radius: 10px;
 
-    text-align: center; /*pensar flexibilidade*/
+    text-align: center; /*pensar flexibilidade com uso do wrap no Flexbox*/
 }
 
 .main-img {
@@ -69,17 +70,18 @@ h2 {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    align-self: stretch; 
     padding: 10px 0px;
-    background-color: rgb(112, 93, 129); /*remover*/
 }
 
 .attribution {
-    font-size: 11px; text-align: center; 
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(277, 64%, 61%);
 }
