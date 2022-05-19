@@ -29,11 +29,9 @@ main {
     justify-content: center;
     align-items: stretch;
 
-    max-width: 1080px; /*aumentar pra 1290px*/
+    max-width: 1080px;
     min-width: 345px;
     
-
-    /*width: 345px;*/
     margin: 75px 25px;
 
     border-radius: 10px;
@@ -77,7 +75,6 @@ h2 {
 
 .data {
     display: flex;
-
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -106,7 +103,6 @@ footer {
     font-size: 11px;
     text-align: center; 
     color: hsl(0, 0%, 100%);
-
 }
 
 .attribution a {
